@@ -9,7 +9,7 @@
 - エラーメッセージ: 英語
 - PR とコミットは Conventional Commits に従う。
 - PR タイトルとコミット本文の言語: PR タイトルは Conventional Commits 形式（英語推奨）。PR 本文は日本語。コミットは Conventional Commits 形式（description は日本語）。
-- 日本語と英数字の間には半角スペースを入れる。
+- 日本語と英数字の間には半角スペースを挿入する。
 
 ## 判断記録のルール
 - 判断内容、代替案、採用理由、前提条件、不確実性を明示する。
@@ -25,3 +25,27 @@
 - ログに機密情報を出力しない。
 
 ## リポジトリ固有
+- **type: Discord Bot (Multi-purpose utility bot)**
+- **target_server: jao Gamers Club (Official Discord server for jao Minecraft Server)**
+- **uses: discord.js v14 (Modern Discord API library)**
+- **uses: @book000/eslint-config (Shared ESLint config from same author)**
+- **uses: @book000/node-utils (Shared utilities from same author)**
+- **deployment: Docker container with Node.js 22-alpine**
+- **timezone: Asia/Tokyo configured in Docker**
+- **config_management: JSON-based configuration at /data/config.json**
+- **command_prefix: Slash commands (/) based**
+- **features: 30+ commands (translation, text transforms, birthday, image search, etc.)**
+- **features: Multiple event handlers (greeting, pin reactions, meeting votes, etc.)**
+- **features: Scheduled jobs and cron tasks**
+- **features: Permission-based command access control**
+- **features: Image canvas support (@napi-rs/canvas)**
+- **features: Multi-language detection (detectlanguage library)**
+- **bot_intents: Guilds, GuildMessages, GuildMembers, GuildMessageReactions, MessageContent**
+- **node_version: 22.14.0 (from .node-version)**
+- **package_manager_version: pnpm@10.10.0**
+- **package_format: private package (not published to npm)**
+- **output_dir: dist/main.js**
+- **testing: Jest with ts-jest transform**
+- **ci_workflows: add-reviewer, add-viewer, console-log-error, doc-build, doc-deploy, docker, jaotan-review, nodejs-ci-pnpm**
+- **devcontainer: Available for standardized development environment**
+- **repository_url: git@github.com:jaoafa/jaotan.ts.git**
